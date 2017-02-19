@@ -2,116 +2,155 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>前端学院-task-1</title>
+	<title>前端学院-task-2</title>
 <style>
+/*body*/
+body{margin: 0;padding: 0;background-color: #ddd; font-family: "微软雅黑"}
+img{width: 10%;}
+/*表头*/
+#top{background-color: #666;height: 60px;}
+#top-left{float: left; margin: 10px 5px;}
+#top-right{float: right;margin-top: 20px;margin-right: 70px;}
+#top-right li{float: left;margin-right: 30px;font-size: 15px;}
+#top-img{float:left; margin-left: 100px; width: 2.5%;margin-top: 3px;}
+/*文章*/
+#main-1,#main-2,#main-3,#main-4{border: 1px solid #000;background-color: #eee; margin: 20px 100px;}
+#main-1-1,#main-2-1,#main-3-1,#main-4-1{margin: 10px;}
+/*注册*/
+#submit-bottom{font-size: 20px; border: 1px solid black;width: 60%;height: 40px; background-color: #34d;border-radius: 5px;}
+/*版权*/
+#bottom{background-color: black; text-align: center; color: blue;padding: 30px; }
+
 </style>	
 </head>
 <body>
-<h1>前端之路</h1>
-<ul>
-	<li><a href="#">导航链接-懵懂不知</a></li>
-	<li><a href="#">导航链接-初窥门径</a></li>
-	<li><a href="#">导航链接-登堂入室</a></li>
-	<li><a href="#">导航链接-融会贯通</a></li>
-	<li><a href="#">导航链接-炉火纯青</a></li>
-	<li><a href="#">导航链接-天人合一</a></li>
-	<li><a href="#">导航链接-大道至简</a></li>
-</ul>
-<h2>精彩开始</h2>
-<h3>前端介绍</h3>
-<p>作者：JS-AN&nbsp日期：2017年2月13日</p>
-<p>宇宙混沌，盘古开天，女娲造人，前端之力，由此而生：</p>
-<p>前端之路漫漫长兮，既入此门，莫要急功急利。不勤则废，唯需本心。<a href="#">速成之法</a>，皆为邪道，且行且珍惜</p>
-<img src="changlu.jpg">
-<p>废话少说，<a href="#">捷径在此</a>，开始吧</p>
-<h2>凑字数</h2>
-<h3>凑字数</h3>
-<p>凑字数</p>
-<img src="changlu.jpg">
-<ul>
-	<li style="font-size: 50px">html</li>
-	<li style="font-size: 50px">css</li>
-	<li style="font-size: 50px">javasctipt</li>
-</ul>
-<div>
-	<strong>图片</strong>
-	<div><img src="one.jpg"></div>
-	<div><img src="two.jpg"></div>
-	<div><img src="tree.jpg"></div>
-	<div><img src="four.jpg"></div>
-	<div><img src="five.jpg"></div>
-	<div><img src="six.jpg"></div>
-	<div><img src="seven.jpg"></div>
-	<div><img src="eight.jpg"></div>
-	<div><img src="nine.jpg"></div>
-	<div><img src="ten.jpg"></div>
+<div id="top">
+<img id="top-img" src="wutianlingnai.jpg">
+<h1 style="color: pink" id="top-left">前端之路</h1>
+	<ul id="top-right">
+		<li><a href="#">懵懂不知</a></li>
+		<li><a href="#">初窥门径</a></li>
+		<li><a href="#">登堂入室</a></li>
+		<li><a href="#">融会贯通</a></li>
+		<li><a href="#">炉火纯青</a></li>
+		<li><a href="#">天人合一</a></li>
+		<li><a href="#">大道至简</a></li>
+	</ul>
 </div>
-<h2>大功告成</h2>
-<h3>（笑死）</h3>
-<p>作者：js-an &nbsp日期：2017年2月13日</p>
-<ol>
-	<li>盘古</li>
-	<li>女娲</li>
-	<li>js-an</li>
-</ol>
-<p>
-<table border="1px">
-	<th>门派</th><th>大神</th><th>资料</th>
-		<tr>
-			<td>混沌门</td>
-			<td>盘古</td>
-			<td><a href="#">看他</a></td>
-		</tr>
-		<tr>
-			<td>造物派</td>
-			<td>女娲</td>
-			<td><a href="#">看她</a></td>
-		</tr>
-		<tr>
-			<td>黑科技</td>
-			<td>js-an</td>
-			<td><a href="#">看他</a></td>
-		</tr>
-</table>
-</p>
-<h1>前端之路</h1>
-<h1>注册仙位</h1>
-<div>
-	请输入邮箱地址：<input type="text" name="e-mail" value="来不及了，快上车">
+<div id="main-1">
+	<div id="main-1-1">
+		<h2>精彩开始</h2>
+		<h3>前端介绍</h3>
+		<p>作者：JS-AN&nbsp日期：2017年2月13日</p>
+		<p>宇宙混沌，盘古开天，女娲造人，前端之力，由此而生：</p>
+		<p>前端之路漫漫长兮，既入此门，莫要急功急利。不勤则废，唯需本心。<a href="#">速成之法</a>，皆为邪道，且行且珍惜</p>
+		<img src="wutianlingnai.jpg">
+		<p>废话少说，<a href="#">捷径在此</a>，开始吧</p>
+	</div>
 </div>
-<p>邮箱地址按要求格式输入</p>
-<div>
-	请输入密码：
-	<input type="text" name="password" value="就是要看你密码">请重复输入密码
-	<input type="text" name="again-passwoed" value="还是要看你密码">
+<div id="main-2">
+	<div id="main-2-1">
+		<h2>凑字数</h2>
+		<h3>凑字数</h3>
+		<p>凑字数</p>
+		<img src="wutianlingnai.jpg">
+		<ul>
+			<li style="font-size: 50px">html</li>
+			<li style="font-size: 50px">css</li>
+			<li style="font-size: 50px">javasctipt</li>
+		</ul>
+	</div>
 </div>
-<p>密码为6-16位英文数字啊</p>
-<div>
-	性别：
-	<input type="radio" name="ridio-a" checked="checked">男
-	<input type="radio" name="radio-a">女
+<div id="main-3">
+	<div id="main-3-1">
+		<strong>图片</strong>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+		<div><img src="wutianlingnai.jpg"></div>
+	</div>
 </div>
-<div>空间：
-	<select>
-		<option>金星</option>
-		<option>火星</option>
-		<option>水星</option>
-		<option>山卡拉地方</option>
-	</select>
+<div id="main-4">
+	<div id="main-4-1">
+		<h2>大功告成</h2>
+		<h3>（笑死）</h3>
+		<p>作者：js-an &nbsp日期：2017年2月13日</p>
+		<ol>
+			<li>盘古</li>
+			<li>女娲</li>
+			<li>js-an</li>
+		</ol>
+		<p>
+		<table border="1px">
+			<th>门派</th><th>大神</th><th>资料</th>
+				<tr>
+					<td>混沌门</td>
+					<td>盘古</td>
+					<td><a href="#">看他</a></td>
+				</tr>
+				<tr>
+					<td>造物派</td>
+					<td>女娲</td>
+					<td><a href="#">看她</a></td>
+				</tr>
+				<tr>
+					<td>黑科技</td>
+					<td>js-an</td>
+					<td><a href="#">看他</a></td>
+				</tr>
+		</table>
+		</p>
+	</div>
 </div>
-<div>
-爱好：
-<input type="checkbox" name="checkbox-a">内功
-<input type="checkbox" name="checkbox-a">招式
-<input type="checkbox" name="checkbox-a">兵器
+<div id="zhuce">
+	<div id="zhuce-1">
+		<h4>前端之路,注册仙位</h4>
+		<div>
+			请输入邮箱地址：<input type="text" name="e-mail" value="来不及了，快上车">
+		</div>
+		<p>邮箱地址按要求格式输入</p>
+		<div>
+			请输入密码：
+			<input type="text" name="password" value="就是要看你密码">请重复输入密码
+			<input type="text" name="again-passwoed" value="还是要看你密码">
+		</div>
+		<p>密码为6-16位英文数字啊</p>
+		<div>
+			性别：
+			<input type="radio" name="radio-a" checked="checked">男
+			<input type="radio" name="radio-a">女
+		</div>
+		<div>空间：
+			<select>
+				<option>金星</option>
+				<option>火星</option>
+				<option>水星</option>
+				<option>山卡拉地方</option>
+			</select>
+		</div>
+		<div>
+		爱好：
+		<input type="checkbox" name="checkbox-a">内功
+		<input type="checkbox" name="checkbox-a">招式
+		<input type="checkbox" name="checkbox-a">兵器
+		</div>
+		<div>
+			<p>说说你的破事：</p>
+			<textarea></textarea>
+			<div>
+				<input id="submit-bottom" type="submit" name="tijiao" value="提交">
+			</div>
+		</div>
+	</div>
 </div>
-<div>
-	说说你的破事：<br>
-	<textarea></textarea>
-	<input type="submit" name="tijiao" value="提交">
-</div>
-<div>
-	版权所有@
+<div id="bottom">
+	版权所有&copy
 </div>
 </body>
 </html>
