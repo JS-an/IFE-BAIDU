@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>前端学院-task-2</title>
+	<title></title>
 <style>
 /*body*/
 body{margin: 0;padding: 0;background-color: #ddd; font-family: "微软雅黑"}
@@ -22,13 +22,12 @@ tr,td,th{border: 1px solid #ccc;}
 tfoot{background-color: #ccc;}
 /*注册*/
 #zhuce{border: 1px solid #000;background-color: #eee; margin: 20px 100px;}
-#submit-bottom{font-size: 20px; width: 100%;height: 40px; background-color: #34d;border-radius: 5px;}
+#submit-bottom{font-size: 20px; width: 100%;height: 40px; background-color: #34d;border-radius: 10px;}
 #zhuce h3{margin-left: 20px; border-left: 3px solid #aaa;padding-left: 10px;line-height: 2em;}
-.zhuce2{width: 50%; text-align: right;}
-#zhuce p{margin-left: 420px; font-size: 10px; color: #aaa;}
+.zhuce4{text-align: left;margin-left: 40%;font-size: 10px;color: #aaa;}
+.zhuce3{display: inline-block;text-align: right;width: 40%;vertical-align: top;}
+.zhuce2{padding: 5px 0 ;}
 #zhuce textarea{width: 400px;height: 100px;}
-#zhuce3{margin-left: 310px;}
-.zhuce4{float: left;}
 /*版权*/
 #bottom{background-color: black; text-align: center; color: blue;padding: 30px; }
 
@@ -140,24 +139,26 @@ tfoot{background-color: #ccc;}
 	</div>
 </div>
 <div id="zhuce">
+	<h3>前端之路,注册仙位</h3>
 	<div id="zhuce-1">
-		<h3>前端之路,注册仙位</h3>
 		<div class="zhuce2">
-			请输入邮箱地址：<input type="text" name="e-mail" value="来不及了，快上车">
+			<div class="zhuce3">请输入邮箱地址：</div>
+			<input type="text" name="e-mail" value="来不及了，快上车">
 		</div>
-		<p>邮箱地址按要求格式输入</p>
+		<div class="zhuce4">&nbsp;邮箱地址按要求格式输入</div>
 		<div class="zhuce2">
-			请输入密码：
-			<input type="text" name="password" value="就是要看你密码"><br/>请重复输入密码:
+			<div class="zhuce3">请输入密码：</div>
+			<input type="text" name="password" value="就是要看你密码"><br/><div class="zhuce3">请重复输入密码：</div>
 			<input type="text" name="again-passwoed" value="还是要看你密码">
 		</div>
-		<p>密码为6-16位英文数字啊</p>
+		<div class="zhuce4">&nbsp;密码为6-16位英文数字啊</div>
 		<div class="zhuce2">
-			性别：
+			<div class="zhuce3">性别：</div>
 			<input type="radio" name="radio-a" checked="checked">男
 			<input type="radio" name="radio-a">女
 		</div>
-		<div class="zhuce2">空间：
+		<div class="zhuce2">
+			<div class="zhuce3">空间：</div>
 			<select>
 				<option>金星</option>
 				<option>火星</option>
@@ -166,24 +167,22 @@ tfoot{background-color: #ccc;}
 			</select>
 		</div>
 		<div class="zhuce2">
-		爱好：
-		<input type="checkbox" name="checkbox-a">内功
-		<input type="checkbox" name="checkbox-a">招式
-		<input type="checkbox" name="checkbox-a">兵器
+			<div class="zhuce3">爱好：</div>
+			<input type="checkbox" name="checkbox-a">内功
+			<input type="checkbox" name="checkbox-a">招式
+			<input type="checkbox" name="checkbox-a">兵器
 		</div>
-		<div>
-			<div id="zhuce3">
-			<div class="zhuce4">说说你的破事：</div>
-			<textarea class="zhuce4"></textarea>
-			</div>
+		<div class="zhuce2">
+			<div class="zhuce3">说说你的破事：</div>
+			<textarea></textarea>
+		</div>
 			<div>
 				<input id="submit-bottom" type="submit" name="tijiao" value="提交">
 			</div>
-		</div>
 	</div>
 </div>
-<div id="bottom">
+<footer id="bottom">
 	版权所有&copy
-</div>
+</footer>>
 </body>
 </html>
