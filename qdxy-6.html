@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{margin: 0;padding: 0;}
+		#yemian{margin: 0 auto; width: 980px;height: 1386px;}
+		#main{margin: 0 auto; width: 892px;height: 1386px;background-color: #fff;position: relative;}
+		/*头部*/
+		#red-block{width: 110px;height: 61px;background-color: #c44;font-size: 12px;font-family: "黑体";color: #fff;display: inline-block;}
+		#red-block>span{position: absolute;margin-top: 45px;}
+		#top-line>span{font-size: 12px;font-family: "黑体";color: #d45d5c;position: absolute;margin-top:45px;right: 0;}
+		#top-line{width: 892px;margin: 0 auto;position: relative;}
+		#line-1{width: 892px;height: 2px;background-color: #938e8c;margin-top: -3px;}
+		/*内容上部*/
+		#main-1{position: relative; width: 892px;height: 331px;}
+		#left-img{width: 191px; height: 301px;background-color: #0f0;position: absolute; opacity: 0.2;}
+		#right-img{width: 191px; height: 301px;background-color: #f00;position: absolute; opacity: 0.2;top: 0;right: 0;bottom: 0;}
+		#big-img>img{width: 641px;height: 301px;}
+		#big-img{position: absolute;margin-top: 30px;}
+		#main-img{position: absolute;margin-top: 30px;height: 301px;width: 203px;top: 0;right: 0;bottom: 0;}
+		#line-2{width: 203px;height: 2px;background-color: #cc8091;}
+		.one{text-decoration: underline;font-size: 24px;font-family: "微软雅黑";color: #000;margin: 5px 0 0;}
+		.two{font-size: 12px;font-family: "楷体";color: #676767;margin: 5px 0;}
+		.three{position: absolute; font-size: 116px;font-family: "微软雅黑";color: #75b86b;font-style: italic;margin: 0;right: 16px;}
+		.four .five .six{font-family: "微软雅黑";color: #cc8091;}
+		.four{font-size: 55px;position: relative;margin-top: 145px;}
+		.five{font-size: 21px;position: relative;margin-left: 85px;margin-top: -100px;}
+		.six{font-size: 12px;position: relative;margin-left: 85px;margin-top: -25px;}
+		/*内容中部*/
+		#main-2{position: relative;}
+		.main-2-1{width: 220px; display: inline-block;margin-right: 20px;}
+		.what{font-size: 12px;font-family: "宋体";color: #7677777;letter-spacing: 1px;oblique; opacity: 0.7;}
+		.what-under{text-decoration: underline;font-size: 20px;color: #418c59;}
+		.when-under{text-decoration: underline;font-size: 20px;color: #d2994f;}
+		.main-2-2{width: 130px; display: inline-block;vertical-align: top;}
+		.how-under{text-decoration: underline;font-size: 20px;color: #cc7680;}
+		.main-2-2-2{line-height: 10px;padding-top: 5px;}
+		.main-2-2-2 p{font-size: 12px;font-family: "微软雅黑";color: #231815;opacity: 0.7;}
+		.main-2-2-2 span{font-size: 12px;font-family: "微软雅黑";color: #cd4a48;font-style: oblique; opacity: 0.7;}
+		/*内容下部左*/
+		#main-3{position: relative;}
+		#main-3-1{width: 415px;position: absolute;}
+		.main-3-1-1{font-size: 72px;font-family: "黑体";color: #f5e327;font-style: oblique;}
+		.main-3-1-2{font-size: 42px;font-family: "黑体";color: #11456b;font-weight: 700;font-style: normal;}
+		.main-3-1-3{font-size: 33px;font-family: "黑体";color: #11456b;font-weight: 700;margin-top: -60px;}
+		.main-3-1-up{line-height: 32px;}
+		.main-3-1-up hr{border: 1px solid #11456b;margin-top: -20px;}
+		.main-3-1-down span{float: left; font-size: 72px;font-family: "微软雅黑";color: #f5e327;}
+		.main-3-1-down p{font-size: 12px;font-family: "宋体";color: #767777;letter-spacing: 2px;margin: 0;}
+		.main-3-1-down img{height: 280px;float: right;margin: 20px 10px;}
+		/*内容下部右*/
+		#main-3-2{width:458px;position: absolute;top: 65px;right: 0;}
+		.main-3-2-1{position: relative;width: 458px;height: 275px;}
+		.main-3-2-1 img{width: 458px;height: 275px;position: absolute;}
+		.main-3-2-2{width: 458px; height: 61px;position: absolute;left: 0;bottom: 0;background-color: #000;opacity: 0.3;}
+		.main-3-2-3{width: 3px;height: 44px;background-color: #72b16a;position: absolute;left: 40px;bottom: 10px;}
+		.main-3-2-4{position: absolute;left: 50px;bottom: 15px;font-size: 26px;color: #fff;font-family: "微软雅黑";}
+		.main-3-2-4 span{font-size: 12px;color: #72b16a;font-family: "微软雅黑";font-style: oblique;margin-left: 5px;}
+		.main-3-2-5{position: absolute; width: 458px;height: 318px;background-color: #e2d9c5;top: 305px;}
+		.main-3-2-6 p{font-size: 16px;font-family: "宋体";color: #5a5b5b;margin: 25px 20px 20px 50px;}
+		.main-3-2-6 span{font-size: 12px;font-style: oblique;}
+		.main-3-2-6 samp{width: 0;height: 0;border-bottom: 10px solid #11456b;border-right: 5px solid transparent;border-left: 5px solid transparent;position: absolute;left: 35px;margin-top: 6px;}
+		.main-3-2-7{width: 260px;height: 160px;background-color: #c55;position: absolute;bottom: 0;left: 0;}
+		.main-3-2-7 samp{font-size: 110px;color: #fff;font-family: "微软雅黑";line-height: 160px;margin-left: 10px;}
+		.main-3-2-8{width: 2px;height: 86px;background-color: #fff;position: absolute;top:37px;left: 80px;}
+		.main-3-2-9{position: absolute;top:30px;left: 85px;}
+		.main-3-2-9 p{font-size: 21px;font-family: "黑体";color: #fff;font-style: oblique;margin: 6px 0;}
+		.main-3-2-10{width: 178px;height: 160px;position: absolute;bottom: 0;right: 10px;}
+		.main-3-2-13{font-size: 14px;font-family: "黑体";font-style: oblique;color: #5a5b5b;margin: 16px 0;}
+		.main-3-2-11,.main-3-2-12{font-size: 72px;font-family: "黑体";color: #d45d5c;}
+		.main-3-2-11{float: left;margin: 0 0 -40px -40px;}
+		.main-3-2-12{float: right;margin: -20px -30px 0 0;}
+		/*底部*/
+		#foot hr{width: 892px; border: 1px solid #938e8c;position: absolute;bottom: 50px; left: 0; right: 0;}
+		#foot p{position: absolute;bottom: 35px;right: 0;font-size: 12px;color: #d45d5c;font-family: "黑体";}
+	</style>
+</head>
+<body>
+<div id="yemian">
+	<div id="main">
+		<div id="top-line">
+			<div id="red-block">
+			<span>&nbsp;ife.rena.com</span>
+			</div>
+			<span>2017.02</span>
+			<div id="line-1"></div>
+		</div>
+		<div id="main-1">
+			<div id="big-img">
+				<div id="left-img"></div>
+				<div id="right-img"></div>
+				<img src="rena.jpg">
+			</div>
+			<div id="main-img">
+				<div id="line-2"></div>
+				<p class="one">Rena</p>
+				<p class="one">Takeda</p>
+				<p class="two">renarenarenarenarena<br/>renarenarenarenarenarenarena</p>
+				<p class="three">700</p>
+				<p class="four">3.2</p>
+				<p class="five">rena</p>
+				<p class="six">takedatakedatakeda</p>
+			</div>
+		</div>
+		<div id="main-2">
+			<div class="main-2-1">
+				<h3 class="what-under">What</h3>
+				<p class="what">武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈</p>
+			</div>
+			<div class="main-2-1">
+				<h3 class="when-under">When</h3>
+				<p class="what">武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈</p>
+			</div>
+			<div class="main-2-2">
+				<div class="mian-2-2-1">
+					<h3 class="how-under">How</h3>
+					<p class="what">武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈武田玲奈</p>
+				</div>
+				<div class="main-2-2-2">
+					<p>What--------<span>40%</span></p>
+					<p>What--------<span>30%</span></p>
+					<p>What--------<span>30%</span></p>
+				</div>
+			</div>
+		</div>
+		<div id="main-3">
+			<div id="main-3-1">
+				<div class="main-3-1-up">
+					<p class="main-3-1-1">THE
+					<span class="main-3-1-2">TECHNOLOGE OF FRONT</span></p>
+					<P class="main-3-1-3">武田玲奈专区</P>
+					<hr>
+				</div>
+				<div class="main-3-1-down">
+					<span>玲</span><p>奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈
+					<img src="wutianlingnai.jpg">
+					玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈。</p>
+					<p style="text-indent: 2em">玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈。</p>
+					<p style="text-indent: 2em">玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈玲奈。
+					</p>
+				</div>
+			</div>
+			<div id="main-3-2">
+				<div class="main-3-2-1">
+					<img src="rena.jpg">
+					<div class="main-3-2-2"></div>
+					<div class="main-3-2-3"></div>
+					<div class="main-3-2-4">武田玲奈<span>武田玲奈武田玲奈</span></div>
+				</div>
+				<div class="main-3-2-5">
+					<div class="main-3-2-6">
+						<samp></samp><p>玲奈玲奈玲奈玲奈玲奈玲奈.....................<span>玲奈</span></p>
+						<samp></samp><p>玲奈玲奈玲奈玲奈玲奈玲奈.....................<span>玲奈</span></p>
+						<samp></samp><p>玲奈玲奈玲奈玲奈玲奈玲奈.....................<span>玲奈</span></p>
+					</div>
+					<div class="main-3-2-7">
+						<samp>0</samp>
+						<div class="main-3-2-8"></div>
+						<div class="main-3-2-9">
+						<p>ONE TWO</p>
+						<p>THREE FORE FIVE</p>
+						<P style="font-size: 12px;font-style: normal;margin-left: 3px;">rena rena rena rena rena rena rena</P>
+						</div>
+					</div>
+					<div class="main-3-2-10">
+						<p class="main-3-2-11">“</p>
+						<p class="main-3-2-13">rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena rena </p>
+						<p class="main-3-2-12">”</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="foot">
+			<hr>
+			<p>www.rena.com</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
