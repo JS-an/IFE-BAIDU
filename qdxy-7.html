@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+	body{margin: 0;padding: 0;}
+	/*头部*/
+	header{
+		width: 100%;
+		height: 62px;
+		font-family: "微软雅黑";
+		position: relative;}
+	.head-left{
+		background: url(icon/book.png) no-repeat left;
+		left: 30px;
+		padding: 0 35px;
+		position: absolute;}
+	.head-left h1{font-size: 22px;}
+	.head-nav{
+		position: absolute;
+		right: 150px;}
+	.head-nav ul{
+		display: inline;
+		margin: 0;
+		padding: 0;
+		list-style: none;}
+	.head-nav li{
+		float: left;
+		margin: 0 20px;}
+	.head-nav a{
+		text-decoration: none;
+		color: #357;
+		display: block;
+		width: 100px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;}
+	.head-nav a:hover{
+		color: #f00;
+		border-bottom: 2px #f55 solid;}
+	.head-right{
+		background: url(icon/head.png) no-repeat left;
+		padding: 0 20px;
+		position: absolute;
+		right: 50px;}
+	.head-right a{
+		text-decoration: none;
+		color: #f88;
+		display: block;
+		width: 50px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;}
+	.head-right a:hover{
+		background-color: #f0f0f0;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 5px;}
+	/*内容*/
+	#main{
+		position: relative;
+		top: -40px;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 2250px;}
+	.one{
+		min-width: 1335px;
+		min-height: 890px;
+		position: absolute;
+		width: 100%;
+		max-width: 2250px;
+		overflow: hidden;}
+	.one-1{
+		position: absolute;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;}
+	.one-1 img{
+		display: block;
+		min-width: 1335px;
+		min-height: 890px;
+		width: 100%;
+		height: 100%;}	
+	.one h2{
+		position: absolute;
+		top: 300px;
+		left: 200px;
+		font-size: 50px;
+		color: #fff;}
+	.one p{
+		position: absolute;
+		top: 400px;
+		left: 200px;
+		font-size: 25px;
+		color: #fff;}
+	.one a{
+		position: absolute;
+		top: 550px;
+		left: 200px;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		line-height: 60px;
+		width: 300px;
+		height: 60px;
+		font-size: 30px;
+		color: #fff;
+		background-color: #f88;
+		transition: background-color 1s;}
+	.one a:hover{background-color: #f22;}
+	.one-2{
+		position: absolute;
+		background-color: #000;
+		min-width: 1335px;
+		min-height: 890px;
+		width: 100%;
+		height: 100%;
+		opacity: 0.1;}
+	.two{
+		position: relative;
+		top:890px;
+		width: 100%;
+		margin:40px auto;}
+	.two-up{
+		position: absolute;
+		width: 100%;
+		min-width: 1335px;
+		margin: 40px 0;
+		text-align: center;}
+	.two-up img{padding: 0 10.6%;}
+	.two-down{
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		min-width: 1335px;}
+	.two-down p{
+		display: inline-block;
+		text-align: center;
+		width: 24%;
+		height: 50px;
+		border-right: 2px solid #a8a8a8;
+		color: #989898;}
+	.three{
+		position: relative;
+		top: 1120px;
+		margin: 0 auto;
+		width: 100%;
+		min-width: 1335px;}
+	.three-up{
+		min-width: 1335px;
+		height: 350px;
+		background-color: #e8e8e8;
+		margin: 0 auto;}
+	.three-up span{
+		display: block;
+		text-align: center;
+		padding-top: 100px;}
+	.three-up p{
+		text-align: center;
+		font-size: 50px;
+		color: #888888;}
+	.three-down{
+		position: absolute;
+		background-image: url(wutianlingnai.jpg);
+		background-size: contain;
+		width: 100%;
+		height: 350px;
+		opacity: 0.9;}
+	.three-down-1{
+		min-width: 1335px;
+		text-align: center;
+		font-size: 20px;
+		color: #ff69b4;
+		padding-top: 40px;
+		margin-bottom: 10px;
+		}
+	.three-down-2{
+		min-width: 1335px;
+		text-align: center;
+		font-size: 10px;
+		color: #ff69b4;
+		padding-top: 10px;}
+	.three-down-3{
+		margin: 0 auto;
+		width: 40px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #000;}
+	.box1{text-align: center;}
+	.three-down select{
+		background-color: #e8e8e8;
+		border: 1px solid #f22;
+		width: 200px;
+		height: 40px;
+		margin: 30px 70px;}
+	.three-down option{line-height: 20px;}
+	.three-down a{
+		background-color: #f22;
+		padding: 5px 0 5px 60px;
+		border-radius: 5px;
+		margin-left: 50px;
+		text-decoration: none;
+		color: #fff;
+		letter-spacing: 60px;
+		transition: background-color 0.5s;}
+	.three-down a:hover{
+		background-color: #e8e8e8;
+		color: #f22;}
+	.four{
+		position: relative;
+		top: 1470px;
+		width: 100%;
+		height: 500px;
+		background-color: #f5f5f5;}		
+	.four-1{
+		text-align: center;
+		padding-top: 100px;}
+	.four-1 div{
+		display: inline-block;
+		margin: 0 50px;}
+	.four-1 img{
+		height: 240px;
+		border: 1px solid #e8e8e8;
+		padding: 5px;}
+	.four-1 p{
+		font-size: 20px;
+		font-family: "微软雅黑";}
+</style>
+</head>
+<body>
+	<header>
+		<div class="head-left">
+		<h1>武田玲奈</h1>
+		</div>
+		<nav class="head-nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">最新活动</a></li>
+				<li><a href="#">个人介绍</a></li>
+				<li><a href="#">粉丝社区</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</nav>
+		<div class="head-right">
+			<span><a href="#">登录</a></span>
+		</div>
+	</header>
+	<div id="main">
+		<section class="one">
+			<div class="one-1">
+				<div class="one-2"></div>
+				<img src="rena.jpg">
+			</div>
+			<h2>Takeda Rena</h2>
+			<p>武田玲奈，日本演员、模特，<br/>隶属于Vithmic.co事务所</p>
+			<a href="#">玲奈课堂</a>
+		</section>
+		<section class="two">
+			<div class="two-up">
+				<img src="icon/round.png">
+				<img src="icon/flag.png">
+				<img src="icon/flow.png">
+				<img src="icon/frou.png">
+			</div>
+			<div class="two-down">
+				<p>出生日期：1997年7月27日</p>
+				<p>出生地：日本福岛县</p>
+				<p>民族：大和</p>
+				<p style="border: none;">出道日期：2013年12月</p>
+			</div>
+		</section>
+		<section class="three">
+			<div class="three-up">
+				<span><img src="icon/big-book.png"></span>
+				<p>关于武田玲奈，你不知道的还有什么？</p>
+			</div>
+			<div class="three-down">
+				<p class="three-down-1">查找关于武田玲奈城市活动信息</p>
+				<div class="three-down-3"></div>
+				<p class="three-down-2">每个城市都有不同的信息，请自主查找所需要了解的城市</p>
+				<div class="box1">
+				<select>
+					<option value="中国">中国</option>
+					<option value="外国">外国</option>
+					<option value="家里">家里</option>
+				</select>
+				<select>
+					<option value="北京">北京</option>
+					<option value="广东">广东</option>
+					<option value="家里">家里</option>					
+				</select>
+				<select>
+					<option value="广州">广州</option>
+					<option value="深圳">深圳</option>
+					<option value="家里">家里</option>					
+				</select>
+				<a href="#">搜索</a>
+				</div>
+			</div>
+		</section>
+		<section class="four">
+			<div class="four-1">
+				<div><p>中国活动</p><img src="wutianlingnai.jpg"></div>
+				<div><img src="wutianlingnai.jpg"><p>日本活动</p></div>
+				<div><p>美国活动</p><img src="wutianlingnai.jpg"></div>
+				<div><img src="wutianlingnai.jpg"><p>家里活动</p></div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
+
