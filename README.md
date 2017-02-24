@@ -1,2 +1,2 @@
 前端学院任务一
-https://js-an.github.io/an-one/qdxy-1
+https://github.com/JS-an/an-one/blob/gh-pages/qdxy-2.html
