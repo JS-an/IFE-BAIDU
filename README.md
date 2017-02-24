@@ -1,2 +1,2 @@
 前端学院任务一
-https://js-an.github.io/an-one/
+https://js-an.github.io/an-one/qdxu-2
