@@ -1,0 +1,8 @@
+bady{
+	margin: 0;
+	padding: 0
+}
+input,a,textarea{
+	display: inline-block;
+	width: 100px;
+}
