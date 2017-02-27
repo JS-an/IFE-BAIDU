@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+section{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.a{
+	width: 150px;
+	height: 120px;
+	border: 1px solid #f00;
+	padding: 20px;
+}
+.b{
+	width: 150px;
+	height: 100px;
+	border: 1px solid #f00;
+	padding: 20px;
+}
+.c{
+	width: 150px;
+	height: 40px;
+	border: 1px solid #f00;
+	padding: 20px;
+}
+.d{
+	width: 150px;
+	height: 200px;
+	border: 1px solid #0f0;
+	padding: 20px;
+	order: -1;
+}
