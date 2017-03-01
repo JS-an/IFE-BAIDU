@@ -28,3 +28,6 @@
 <hr>
 <h2>JS任务一</h2>
 <p>https://js-an.github.io/an-one/qdxy-js-1/qdxy-js-1.html</p>
+<hr>
+<h2>JS任务二</h2>
+<p>https://js-an.github.io/an-one/qdxy-js-2/qdxy-js-2.html</p>
