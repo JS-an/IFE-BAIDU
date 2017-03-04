@@ -31,9 +31,9 @@ yc.onclick=function(){
 zr.onclick = function(){
     var x = txt.value;
     if (x!==''&&isNaN(x)==false) {
-    var create = document.createElement('button')
-    var btn = dl.insertBefore(create, dl.firstChild)
-    btn.innerHTML = x
+        var create = document.createElement('button')
+        var btn = dl.insertBefore(create, dl.firstChild)
+        btn.innerHTML = x
     }
     else {
         alert('请输入数字')
@@ -42,9 +42,9 @@ zr.onclick = function(){
 yr.onclick = function(){
     var x = txt.value
     if (x!==''&&isNaN(x)==false) {
-    var create = document.createElement("button")
-    var btn = dl.insertBefore(create, null)
-    btn.innerHTML = x
+        var create = document.createElement("button")
+        var btn = dl.insertBefore(create, null)
+        btn.innerHTML = x
     }
     else {
         alert('请输入数字')
