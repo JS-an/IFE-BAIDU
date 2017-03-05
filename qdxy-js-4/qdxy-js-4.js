@@ -1,9 +1,9 @@
-var txt=document.getElementById("txt");
-var zr=document.getElementById("zr");
-var yr=document.getElementById("yr");
-var zc=document.getElementById("zc");
-var yc=document.getElementById("yc");
-var dl=document.getElementById("dl");
+var txt = document.getElementById("txt");
+var zr = document.getElementById("zr");
+var yr = document.getElementById("yr");
+var zc = document.getElementById("zc");
+var yc = document.getElementById("yc");
+var dl = document.getElementById("dl");
 /*
 var duilie=[];
 zr.onclick=function(){
@@ -28,9 +28,9 @@ yc.onclick=function(){
 }
 */
 
-zr.onclick = function(){
+zr.onclick = function () {
     var x = txt.value;
-    if (x!==''&&isNaN(x)==false) {
+    if (+x === +x && parseInt(x) === parseInt(x)) {
         var create = document.createElement('button')
         var btn = dl.insertBefore(create, dl.firstChild)
         btn.innerHTML = x
@@ -39,9 +39,9 @@ zr.onclick = function(){
         alert('请输入数字')
     }
 }
-yr.onclick = function(){
+yr.onclick = function () {
     var x = txt.value
-    if (x!==''&&isNaN(x)==false) {
+    if (+x === +x && parseInt(x) === parseInt(x)) {
         var create = document.createElement("button")
         var btn = dl.insertBefore(create, null)
         btn.innerHTML = x
@@ -50,17 +50,17 @@ yr.onclick = function(){
         alert('请输入数字')
     }
 }
-zc.onclick = function(){
+zc.onclick = function () {
     var y = dl.removeChild(dl.firstChild);
     alert(y.innerHTML);
 }
-yc.onclick = function(){
+yc.onclick = function () {
     var y = dl.removeChild(dl.lastChild);
     alert(y.innerHTML);
 }
-dl.onclick = function(event){
+dl.onclick = function (event) {
     var z = event.target.tagName;
-    if(z == "BUTTON"){
+    if (z == "BUTTON") {
         dl.removeChild(event.target);
     }
 }
