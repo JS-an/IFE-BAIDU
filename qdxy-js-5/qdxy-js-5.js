@@ -72,7 +72,7 @@ px.onclick = function () {
     var p = []
     for (j = 0; j < dl.childElementCount; j++) {
         var d = document.getElementsByTagName('button')[j]
-        p.push(d.innerHTML)
+        p.push(parseInt(d.innerHTML))
     }
     var k = 0
     var l = k + 1
