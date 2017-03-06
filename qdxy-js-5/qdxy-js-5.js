@@ -99,7 +99,8 @@ px.onclick = function () {
             }
         }
         else {
-            clearInterval(setInterval(go(), 50))
+            clearInterval(setInterval(go, 50))
+            return
         }
     }
 }
