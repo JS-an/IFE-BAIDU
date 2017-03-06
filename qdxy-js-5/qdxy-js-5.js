@@ -72,15 +72,34 @@ px.onclick = function () {
         var d = document.getElementsByTagName('button')[j]
         p.push(d.innerHTML)
     }
-    p.sort(function (a, b) {
-        return a - b
-    })
-    dl.innerHTML = ''
-    for (i = 0; i < p.length; i++) {
-        var x = parseInt(p[i])
-        var create = document.createElement('button')
-        create.style.paddingTop = +x*2+'px'
-        create.textContent = x
-        dl.appendChild(create)
+    var k = 0
+    var l = k + 1
+    setInterval(go, 50)
+    function go() {
+        if (k < p.length - 1) {
+            if (l < p.length) {
+                if (p[k] > p[l]) {
+                    var pp = p[k]
+                    p[k] = p[l]
+                    p[l] = pp
+                    dl.innerHTML = ''
+                    for (i = 0; i < p.length; i++) {
+                        var x = parseInt(p[i])
+                        var create = document.createElement('button')
+                        create.style.paddingTop = +x * 2 + 'px'
+                        create.textContent = x
+                        dl.appendChild(create)
+                    }
+                }
+                l++
+            }
+            else {
+                k++
+                l = k + 1
+            }
+        }
+        else {
+            clearInterval(setInterval(go(), 50))
+        }
     }
 }
