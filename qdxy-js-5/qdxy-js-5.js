@@ -1,9 +1,10 @@
-var txt = document.getElementById("txt");
-var zr = document.getElementById("zr");
-var yr = document.getElementById("yr");
-var zc = document.getElementById("zc");
-var yc = document.getElementById("yc");
-var dl = document.getElementById("dl");
+var txt = document.getElementById("txt")
+var zr = document.getElementById("zr")
+var yr = document.getElementById("yr")
+var zc = document.getElementById("zc")
+var yc = document.getElementById("yc")
+var dl = document.getElementById("dl")
+var st = document.getElementById('st')
 /*
 var duilie = [];
 zr.onclick = function () {
@@ -67,6 +68,7 @@ dl.onclick = function (event) {
     }
 }
 px.onclick = function () {
+    var time = parseInt(st.value)
     var p = []
     for (j = 0; j < dl.childElementCount; j++) {
         var d = document.getElementsByTagName('button')[j]
@@ -74,7 +76,7 @@ px.onclick = function () {
     }
     var k = 0
     var l = k + 1
-    setInterval(go, 50)
+    var times=setInterval(go, time)
     function go() {
         if (k < p.length - 1) {
             if (l < p.length) {
@@ -99,8 +101,7 @@ px.onclick = function () {
             }
         }
         else {
-            clearInterval(setInterval(go, 50))
-            return
+            clearInterval(times)
         }
     }
 }
