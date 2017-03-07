@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#txt{
+    width: 200px;
+    height: 100px;
+}
+span{
+    width: 20px;
+    margin: 5px;
+    background-color: #f35b73;
+}
