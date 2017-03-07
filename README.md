@@ -40,3 +40,6 @@
 <hr>
 <h2>JS任务五</h2>
 <p>https://js-an.github.io/an-one/qdxy-js-5/qdxy-js-5.html</p>
+<hr>
+<h2>JS任务六</h2>
+<p>https://js-an.github.io/an-one/qdxy-js-6/qdxy-js-6.html</p>
