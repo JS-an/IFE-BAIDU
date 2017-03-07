@@ -33,13 +33,13 @@ function del() {
 }
 //输入与输出
 zr.onclick = function () {
-    var x = txt.value
+    var x = txt.value.trim()
     x = x.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/)
     duilie = x.concat(duilie)
     create(duilie)
 }
 yr.onclick = function () {
-    var x = txt.value
+    var x = txt.value.trim()
     x = x.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/)
     duilie = duilie.concat(x)
     create(duilie)
@@ -65,41 +65,3 @@ cx.onclick = function () {
         }
     }
 }
-/*
-zr.onclick = function () {
-    var x = txt.value;
-    if (+x === +x && parseInt(x) === parseInt(x)) {
-        var create = document.createElement('button')
-        var btn = dl.insertBefore(create, dl.firstChild)
-        btn.innerHTML = x
-    }
-    else {
-        alert('请输入数字')
-    }
-}
-yr.onclick = function () {
-    var x = txt.value
-    if (+x === +x && parseInt(x) === parseInt(x)) {
-        var create = document.createElement("button")
-        var btn = dl.insertBefore(create, null)
-        btn.innerHTML = x
-    }
-    else {
-        alert('请输入数字')
-    }
-}
-zc.onclick = function () {
-    var y = dl.removeChild(dl.firstChild);
-    alert(y.innerHTML);
-}
-yc.onclick = function () {
-    var y = dl.removeChild(dl.lastChild);
-    alert(y.innerHTML);
-}
-dl.onclick = function (event) {
-    var z = event.target.tagName;
-    if (z == "BUTTON") {
-        dl.removeChild(event.target);
-    }
-}
-*/
