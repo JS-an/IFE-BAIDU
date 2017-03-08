@@ -21,21 +21,21 @@ hou.onclick = function () {
     color()
 }
 function qx(x) {
-    if (!(x == null)) {
+    if (x !== null) {
         sz.push(x)
         qx(x.firstElementChild)
         qx(x.lastElementChild)
     }
 }
 function zx(x) {
-    if (!(x == null)) {
+    if (x !== null) {
         zx(x.firstElementChild)
         sz.push(x)
         zx(x.lastElementChild)
     }
 }
 function hx(x) {
-    if (!(x == null)) {
+    if (x !== null) {
         hx(x.firstElementChild)
         hx(x.lastElementChild)
         sz.push(x)
