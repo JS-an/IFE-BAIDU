@@ -2,6 +2,7 @@ var qian = document.getElementById('qian'),
     zhong = document.getElementById('zhong'),
     hou = document.getElementById('hou'),
     big = document.getElementsByClassName('big')[0],
+    txt = document.getElementById('txt'),
     sz = []
 
 qian.onclick = function () {
@@ -42,20 +43,28 @@ function hx(x) {
 }
 
 function color() {
+    qian.disabled = 'disabled'
+    zhong.disabled = 'disabled'
+    hou.disabled = 'disabled'
     sz[0].style.backgroundColor = '#f55b73'
     var i = 1
     var time = setInterval(function () {
         if (i < sz.length) {
             sz[i - 1].style.backgroundColor = '#fff'
-            sz[i].style.backgroundColor = '#f55b73' 
-            i++       
+            sz[i].style.backgroundColor = '#f55b73'
+            i++
         }
-        else{
+        else {
+            qian.disabled = ''
+            zhong.disabled = ''
+            hou.disabled = ''
             clearInterval(time)
-            sz[sz.length-1].style.backgroundColor = 'fff'
+            sz[sz.length - 1].style.backgroundColor = 'fff'
         }
-    },500)
+    }, t)
 }
-function qk(){
+//初始化数组
+function qk() {
     sz = []
+    t = parseInt(txt.value)
 }
