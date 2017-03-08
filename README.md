@@ -43,3 +43,6 @@
 <hr>
 <h2>JS任务六</h2>
 <p>https://js-an.github.io/an-one/qdxy-js-6/qdxy-js-6.html</p>
+<hr>
+<h2>JS任务七</h2>
+<p>https://js-an.github.io/an-one/qdxy-js-7/qdxy-js-7.html</p>
