@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+.big{
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+    border: 1px solid #000;
+    display: flex;
+}
+.l1,.r1{
+    display: flex;
+    flex: 1;
+    margin: 30px 10px;
+    border: 1px solid #000;
+}
+.l21,.l22,.r21,.r22{
+    display: flex;
+    flex: 1;
+    margin: 30px 10px;
+    border: 1px solid #000;
+}
+.l31,.l32,.l33,.l34,.r31,.r32,.r33,.r34{
+    display: flex;
+    flex: 1;
+    margin: 30px 10px;
+    border: 1px solid #000;
+}
+button{
+    margin: 20px;
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+}
+div{
+    background-color: #fff;
+}
