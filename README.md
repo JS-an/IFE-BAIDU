@@ -46,3 +46,6 @@
 <hr>
 <h2>JS任务七</h2>
 <p>https://js-an.github.io/an-one/qdxy-js-7/qdxy-js-7.html</p>
+<hr>
+<h2>JS任务八</h2>
+<p>https://js-an.github.io/an-one/qdxy-js-8/qdxy-js-8.html</p>
