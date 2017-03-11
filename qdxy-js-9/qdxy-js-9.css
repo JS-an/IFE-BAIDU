@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+div{
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    margin: 20px 10px;
+    border: 2px solid #000;
+}
+.big{
+    margin: 0 auto;
+    width: 1000px;
+    height: 250px;
+    border: 2px solid #000;
+    display: flex;
+}
+.l1,.c1,.r1{
+    display: flex;
+    margin: 20px 10px;
+    border: 2px solid #000;
+}
+.l1{
+    flex: 3;
+}
+.c1{
+    flex: 3;
+}
+.r1{
+    flex: 1;
+}
+button{
+    margin: 20px;
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+}
+#txt{
+    width: 80px;
+}
+#ctxt{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
+#tjtxt{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
