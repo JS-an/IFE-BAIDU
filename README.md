@@ -52,3 +52,6 @@
 <hr>
 <h2>JS任务九</h2>
 <p>https://js-an.github.io/an-one/qdxy-js-9/qdxy-js-9.html</p>
+<hr>
+<h2>综合任务一</h2>
+<p>https://js-an.github.io/an-one/qdxy-zh-1/qdxy-zh-1.html</p>
