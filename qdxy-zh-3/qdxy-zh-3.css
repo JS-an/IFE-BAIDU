@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px 0;
+}
+.yuan{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin-left: 80px;
+}
+b{
+    vertical-align: top;
+    margin-left: 10px;
+}
+#zx{
+    display: none;
+    margin: 40px 80px;
+}
+#fzx{
+    display: none;
+    margin: 40px 80px;
+}
+#zx1{
+    width: 100px; 
+    height: 30px;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+#zx2{
+    width: 200px; 
+    height: 30px;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+input{
+    width: 400px; 
+    height: 30px;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: none;
+}
