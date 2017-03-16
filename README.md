@@ -58,3 +58,6 @@
 <hr>
 <h2>综合任务二</h2>
 <p>https://js-an.github.io/an-one/qdxy-zh-2/qdxy-zh-2.html</p>
+<hr>
+<h2>综合任务三</h2>
+<p>https://js-an.github.io/an-one/qdxy-zh-3/qdxy-zh-3.html</p>
