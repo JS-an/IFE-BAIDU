@@ -1,12 +1,12 @@
 var table = document.getElementById('qipan'),
     div = document.getElementById('div1'),
-    num = []
+    num = [37,38,39,40]
 
 window.onload = function(){
     div.style.left = 250 + 'px'
     div.style.top = 250 + 'px'
 }
-document.onkeydown = function () { 
+document.onkeydown = function () {
         move(event.keyCode)
         go(event.keyCode)
 }
