@@ -1,16 +1,19 @@
+//获取元素
 var table = document.getElementById('qipan'),
     div = document.getElementById('div1'),
-    num = [37,38,39,40]
-
-window.onload = function(){
+    num = [37, 38, 39, 40]
+//初始化
+window.onload = function () {
     div.style.left = 250 + 'px'
     div.style.top = 250 + 'px'
 }
-document.onkeydown = function () {
-        move(event.keyCode)
-        go(event.keyCode)
+//点击事件
+document.onkeydown = function (ev) {
+    var ev = ev ? ev.keyCode : ev.which   //兼容火狐
+    move(ev)
+    go(ev)
 }
-
+//转向并移动
 function move(ev) {
     switch (ev) {
         case 65:
@@ -28,10 +31,11 @@ function move(ev) {
         case 87:
             div.style.transform = 'rotate(0deg)'
             num = [37, 38, 39, 40]
-            break         
+            break
     }
     go()
 }
+//移动
 function go(ev) {
     switch (ev) {
         case num[0]:
