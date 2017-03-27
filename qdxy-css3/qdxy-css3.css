@@ -22,6 +22,7 @@
 img {
     width: 500px;
     height: 300px;
+    transition: filter 1s;
 }
 
 
@@ -30,11 +31,13 @@ img {
 #bd1 {
     width: 0px;
     height: 200px;
+    transition: width 1s;
 }
 
 #bd2 {
     width: 350px;
     height: 0px;
+    transition: height 1s;
 }
 
 
@@ -47,6 +50,7 @@ img {
     font-size: 25px;
     line-height: 40px;
     padding-top: 75px;
+    transition: padding .8s;
 }
 
 
@@ -61,7 +65,7 @@ a {
 /*图片模糊*/
 
 #box:hover img {
-    filter: blur(5px);
+    filter: blur(2px);
 }
 
 
@@ -70,14 +74,12 @@ a {
 #box:hover #bd1 {
     border-top: 4px solid #eee;
     border-bottom: 4px solid #eee;
-    transition: width 1s;
     width: 350px;
 }
 
 #box:hover #bd2 {
     border-left: 2px solid #eee;
     border-right: 2px solid #eee;
-    transition: height 1s;
     height: 200px;
 }
 
@@ -86,7 +88,6 @@ a {
 
 #box:hover #text {
     padding-top: 55px;
-    transition: padding .8s;
 }
 
 
