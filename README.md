@@ -64,10 +64,11 @@
 <hr>
 <h2>综合任务四</h2>
 <p>https://js-an.github.io/an-one/qdxy-zh-4/qdxy-zh-4.html</p>
-
 <hr>
-<h2>糯米学院</h2>
+<h2>糯米学院（css3模拟动画效果）</h2>
 <p>https://js-an.github.io/an-one/qdxy-css3/qdxy-css3.html</p>
-
+<hr>
+<h2>糯米学院（自定义checbox、radio）</h2>
+<p>https://js-an.github.io/an-one/qdxy-checkbox/qdxy-checkbox.html</p>
 
 
