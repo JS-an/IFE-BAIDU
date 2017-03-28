@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px 300px;
+}
+
+div {
+    margin: 30px 0;
+}
+
+
+/*隐藏按钮*/
+
+input {
+    display: none;
+}
+
+
+/*点击生成样式*/
+
+.btn1+label,
+.btn2+label,
+.btn3+label,
+.btn4+label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+}
+
+.btn1:checked+label,
+.btn2:checked+label,
+.btn3:checked+label,
+.btn4:checked+label {
+    border: 1px solid #f52333;
+}
+
+.btn1:checked+label::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 5px;
+    border-left: 2px solid #f52333;
+    border-bottom: 2px solid #f52333;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    margin: 2px;
+}
+
+.btn1+label:hover,
+.btn2+label:hover,
+.btn3+label:hover,
+.btn4+label:hover {
+    cursor: pointer;
+}
+
+.btn2+label,
+.btn3+label {
+    border-radius: 50%;
+}
+
+.btn2:checked+label::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #f52333;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+
+/*雪碧图*/
+
+.btn4+label {
+    width: 14px;
+    height: 14px;
+}
+
+.btn3:checked+label,
+.btn4:checked+label {
+    background: url(xb.png) no-repeat;
+}
+
+.btn4:checked+label {
+    background-position: -4px -26px;
+}
+
+.btn3:checked+label {
+    background-position: -3px -4px;
+}
