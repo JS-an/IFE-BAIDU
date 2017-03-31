@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box {
+    min-width: 1349px;
+    min-height: 648px;
+    width: 100%;
+    height: 100%;
+    background-color: #5d3;
+}
+
+.ymenu {
+    display: none;
+    z-index: 100;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.ymenu ul {
+    list-style: none;
+}
+
+.ymenu ul li {
+    width: 198px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.ymenu ul li:hover {
+    background-color: #ccc;
+}
