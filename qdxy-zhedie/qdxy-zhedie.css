@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+}
+
+.box {
+    margin: 10px 0;
+}
+/*隐藏按钮*/
+input {
+    display: none;
+}
+/*初始样式*/
+label {
+    display: block;
+    width: 800px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 5px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.text1 {
+    overflow: hidden;
+    padding: 0;
+    width: 800px;
+    height: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: height .5s;
+}
+
+p{
+    margin: 20px;
+}
+/*点击动画*/
+#radio1:checked+label,
+#radio2:checked+label,
+#radio3:checked+label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#radio1:checked+label+div,
+#radio2:checked+label+div,
+#radio3:checked+label+div {
+    height: 200px;
+    border: 1px solid #ddd;
+}
