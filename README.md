@@ -73,6 +73,9 @@
 <hr>
 <h2>糯米学院（右键菜单）</h2>
 <p>https://js-an.github.io/an-one/qdxy-oncontextmenu/qdxy-oncontextmenu.html</p>
+<hr>
+<h2>糯米学院（css3面板折叠）</h2>
+<p>https://js-an.github.io/an-one/qdxy-oncontextmenu/qdxy-oncontextmenu.html</p>
 
 
 
