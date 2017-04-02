@@ -76,6 +76,9 @@
 <hr>
 <h2>糯米学院（css3面板折叠）</h2>
 <p>https://js-an.github.io/an-one/qdxy-zhedie/qdxy-zhedie.html</p>
+<hr>
+<h2>糯米学院（loading）</h2>
+<p>https://js-an.github.io/an-one/qdxy-loading/qdxy-loading.html</p>
 
 
 
